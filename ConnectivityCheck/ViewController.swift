@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             
             
         } else {
-            checkLbl.text = "Connected"
+            checkLbl.text = "You are Connected"
         }
     }
 
