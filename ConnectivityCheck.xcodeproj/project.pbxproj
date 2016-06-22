@@ -12,6 +12,7 @@
 		582FC8C81D19459500E33943 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582FC8C61D19459500E33943 /* Main.storyboard */; };
 		582FC8CA1D19459500E33943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582FC8C91D19459500E33943 /* Assets.xcassets */; };
 		582FC8CD1D19459500E33943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582FC8CB1D19459500E33943 /* LaunchScreen.storyboard */; };
+		58F95C891D1946D700A8288E /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F95C881D1946D700A8288E /* Connectivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		582FC8C91D19459500E33943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		582FC8CC1D19459500E33943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		582FC8CE1D19459500E33943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58F95C881D1946D700A8288E /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				582FC8C21D19459500E33943 /* AppDelegate.swift */,
 				582FC8C41D19459500E33943 /* ViewController.swift */,
+				58F95C881D1946D700A8288E /* Connectivity.swift */,
 				582FC8C61D19459500E33943 /* Main.storyboard */,
 				582FC8C91D19459500E33943 /* Assets.xcassets */,
 				582FC8CB1D19459500E33943 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				582FC8C51D19459500E33943 /* ViewController.swift in Sources */,
 				582FC8C31D19459500E33943 /* AppDelegate.swift in Sources */,
+				58F95C891D1946D700A8288E /* Connectivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +290,7 @@
 				582FC8D31D19459500E33943 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

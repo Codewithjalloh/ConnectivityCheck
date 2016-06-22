@@ -9,16 +9,34 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var checkLbl: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+    }
+    
+    func checkConnection() {
+        print(Reachability.isConnectedToNetwork(), terminator: "")
+        if Reachability.isConnectedToNetwork() == false {
+            let alert = UIAlertController(title: "Alert", message: "Internet is not working", preferredStyle: .Alert)
+            self.presentViewController(alert, animated: false, completion: nil)
+            let okAction = UIAlertAction(title: "Retry", style: .Default) {
+                UIAlertAction in
+                alert.dismissViewControllerAnimated(false, completion: nil)
+                self.checkConnection()
+            }
+            alert.addAction(okAction)
+            checkLbl.text = ""
+        } else {
+            checkLbl.text = "Connected"
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
+    
 
 
 }
