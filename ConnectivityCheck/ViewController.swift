@@ -34,13 +34,12 @@ class ViewController: UIViewController {
             }
             alert.addAction(okAction)
             checkLbl.text = ""
+            
+            
         } else {
             checkLbl.text = "Connected"
         }
     }
-
-  
-    
 
 
 }

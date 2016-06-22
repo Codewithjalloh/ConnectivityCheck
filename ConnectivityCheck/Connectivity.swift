@@ -17,7 +17,7 @@ public class Reachability {
         zeroAdress.sin_len = UInt8(sizeofValue(zeroAdress))
         zeroAdress.sin_family = sa_family_t(AF_INET)
         
-        let defaultRouteReachability = withUnsafePointer(&zeroAdress){
+        let defaultRouteReachability = withUnsafePointer(&zeroAdress) {
             SCNetworkReachabilityCreateWithAddress(nil, UnsafePointer($0))
         }
         
