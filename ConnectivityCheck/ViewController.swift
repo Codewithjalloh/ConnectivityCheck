@@ -18,6 +18,10 @@ class ViewController: UIViewController {
 
     }
     
+    override func viewDidAppear(animated: Bool) {
+        checkConnection()
+    }
+    
     func checkConnection() {
         print(Reachability.isConnectedToNetwork(), terminator: "")
         if Reachability.isConnectedToNetwork() == false {
